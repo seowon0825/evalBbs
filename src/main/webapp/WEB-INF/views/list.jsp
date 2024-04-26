@@ -11,13 +11,14 @@
 <body>
     <h1>list Page</h1>
     <hr>
-    <a href="writeForm">글 작성하기</a>
+    <a href="writeForm">글 작성하기</a><br>
     <c:forEach var="list" items="${list}">
     ${list.bno} 
     /  <a href="detail?bno=${list.bno}">${list.title}</a>
     / ${list.content} 
     / ${list.writer} 
-    / ${list.regdate} <br>
+    / ${list.regdate} 
+    <br>
     </c:forEach>
 
 </body>
