@@ -27,12 +27,7 @@ public class EvalBbsController {
 		return "list";
 	}
 	
-	@RequestMapping("/detail")
-	public String detailDao(HttpServletRequest request,Model model) {
-		String bno = request.getParameter("bno");
-		model.addAttribute("dao", bno);
-		return "detail";
-	}
+	
 	
 	@RequestMapping("/writeForm")
 	public String writeForm() {
@@ -50,11 +45,7 @@ public class EvalBbsController {
 		return "redirect:list";
 	}
 	
-	@RequestMapping("/delete")
-	public String deleteDao(HttpServletRequest request, Model model) {
-		dao.deleteDao(request.getParameter("bno"));
-		return "redirect:list";
-	}
+	
 	
 	
 }
