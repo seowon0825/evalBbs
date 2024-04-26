@@ -9,8 +9,9 @@
 </head>
 <body>
     <h1>index Page</h1>
-    <a href="list">목록보기</a><br>
-    <a href="writeForm">글 작성하기</a>
+    <hr>
+    <a href="list">1. 목록보기</a><br>
+    <a href="writeForm">2. 글 작성하기</a>
 
 </body>
 </html>

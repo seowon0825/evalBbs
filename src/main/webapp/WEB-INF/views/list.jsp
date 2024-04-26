@@ -12,14 +12,19 @@
     <h1>list Page</h1>
     <hr>
     <a href="writeForm">글 작성하기</a><br>
-    <c:forEach var="list" items="${list}">
-    ${list.bno} 
-    /  <a href="detail?bno=${list.bno}">${list.title}</a>
-    / ${list.content} 
-    / ${list.writer} 
-    / ${list.regdate} 
-    <br>
-    </c:forEach>
-
+    <table border="1" width="500" cellpadding="0" cellmargin="0">
+        <tr>
+            <th>번호</th><th>제목</th><th>내용</th><th>작성자</th><th>작성일자</th>
+        </tr>
+        <c:forEach var="list" items="${list}">
+        <tr>
+            <td>${list.bno} </td>
+            <td><a href="detail?bno=${list.bno}">${list.title}</a></td>
+            <td>${list.content}</td>
+            <td>${list.writer}</td>
+            <td>${list.regdate} </td>
+        </tr>
+        </c:forEach>
+    </table>
 </body>
 </html>

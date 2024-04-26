@@ -11,11 +11,29 @@
     <h1>Write Form</h1>
     <hr>
     <form action="write" method="post">
-        제목 : <input type="text" name="title"><br>
-        내용 : <input type="text" name="content"><br>
-        작성자 : <input type="text" name="writer"><br>
-        작성일자 : <input type="text" name="regdate"><br>
-        <input type="submit" name="title">
+    <table border="1" width="500" cellpadding="0" cellmargin="0">
+        <tr>
+            <th>제목</th>
+            <td><input type="text" name="title"></td>
+        </tr>
+        <tr>
+            <th>내용</th>
+            <td><input type="text" name="content"></td>
+        </tr>
+        <tr>
+            <th>작성자</th>
+            <td><input type="text" name="writer"></td>
+        </tr>
+        <tr>
+            <th>작성일자</th>
+            <td><input type="text" name="regdate"></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td><input type="submit" name="title"></td>
+        </tr>
+    </table>
     </form>
+
 </body>
 </html>
