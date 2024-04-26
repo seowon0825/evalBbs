@@ -50,6 +50,11 @@ public class EvalBbsController {
 		return "redirect:list";
 	}
 	
+	@RequestMapping("/delete")
+	public String deleteDao(HttpServletRequest request, Model model) {
+		dao.deleteDao(request.getParameter("bno"));
+		return "redirect:list";
+	}
 	
 	
 }
